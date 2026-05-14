@@ -17,6 +17,7 @@
 
 ### Bug Fixes
 
+- fix: |Pages| Add optional `TEMP_MAIL_ACCESS_KEY` access gate in Pages middleware, setting an HttpOnly cookie from one-time access links to prevent arbitrary public use of the temp-mail UI
 - fix: |Pages| Prefer the `EMAIL_SERVICE` Service Binding in Pages middleware for same-origin API proxying to the backend Worker, reducing direct browser exposure of the Worker endpoint
 - fix: |Auto Reply| Fix auto-reply not triggering when `source_prefix` is empty string (#459), empty value now correctly matches all senders
 - fix: |OAuth2| Fix OAuth2 login callback failure on Android via browser and other mobile browsers due to sessionStorage loss during redirect, add localStorage fallback (#900)

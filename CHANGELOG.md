@@ -17,6 +17,7 @@
 
 ### Bug Fixes
 
+- fix: |Pages| Pages 中间件新增可选 `TEMP_MAIL_ACCESS_KEY` 访问口令门禁，支持通过一次性访问链接设置 HttpOnly Cookie，避免临时邮箱页面被互联网任意访问
 - fix: |Pages| Pages 中间件优先使用 `EMAIL_SERVICE` Service Binding 转发 API 请求，让前端可通过同源 API 访问后端 Worker，减少浏览器直连 Worker 暴露面
 - fix: |自动回复| 修复 `source_prefix` 为空字符串时自动回复不触发的问题（#459），空值现在正确匹配所有发件人
 - fix: |OAuth2| 修复 Android via 浏览器等移动端 OAuth2 登录时 sessionStorage 丢失导致回调失败的问题，新增 localStorage 兜底（#900）
